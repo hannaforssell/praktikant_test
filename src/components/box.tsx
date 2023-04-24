@@ -3,7 +3,7 @@ import "./box.css"
 
 interface IBoxProps {
     color: string;
-    onClick?: () => void;
+    onClick: () => void;
 }
 
 export const Box = ({ color, onClick }: IBoxProps) => {
