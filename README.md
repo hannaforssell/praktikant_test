@@ -23,6 +23,9 @@ Lägg nu till en prop till komponenten `Box.tsx` som gör att man kan lägga til
 ### Uppgift 4:
 Ändra till valfri färg på texten som renderas i boxen och gör så att texten placeras i mitten.
 
+### Uppgift 5:
+Det finns en till komponent i `src/components/text.tsx`. Du kan byta mellan de två komponenterna med hjälp av knapparna uppe i vänstra hörnet. Gör om denna komponent till en funktionell komponent. All funktionalitet inom komponenten ska vara kvar när du gjort om den till en funktionell.
+
 ### Bonus
 Gör så att när man klickar på en knapp så renderas det mellan 10 - 20 boxar, så det ska inte kunna bli mindre än 10 och inte mer än 20 boxar. Alla boxar ska få olika färger. Du kan också fixa så att:
 - Alla props förutom *color* är optional.
