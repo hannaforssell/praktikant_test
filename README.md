@@ -3,6 +3,7 @@
 ## Gör så här:
 - Gör en **fork** av repot.
 - Efter du gjort en fork så kan du använda den som ditt egna repo.
+- Start localhost med *yarn dev*
 - Gör en uppgift och sen commita din lösning.
     - Så commit _1_ blir uppgift 1, commit _2_ blir uppgift 2 osv
     - Du kan namnge commitsen till **Uppgift 1, 2** etc...

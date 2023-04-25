@@ -1,15 +1,28 @@
 import './App.css'
 import { Box } from './components/box'
+import { Toggle } from './misc/comps/toggle'
+import { Text } from './components/text'
 import { useState } from 'react'
 
 export const App = () => {
   const [colorOne, setColorOne] = useState("blue");
+  const [showClass, setShowClass] = useState(false);
+
+  const onClassClick = () => {
+    setShowClass(true)
+  }
+
+  const onFuncClick = () => {
+    setShowClass(false)
+  }
+
   return (
     <>
       <h1>Praktikant test</h1>
       <div className='main-container'>
-        <Box onClick={() => setColorOne("red")} color={colorOne} />
+        {showClass ? <Text title='Klass komponent' /> : <Box onClick={() => setColorOne("red")} color={colorOne} />}
       </div>
+      <Toggle onClassClick={onClassClick} onFuncClick={onFuncClick} />
     </>
   )
 }
