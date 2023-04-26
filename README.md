@@ -4,6 +4,7 @@
 - Gör en **fork** av repot.
 - När du gjort din fork så kan du använda den som ditt repo.
 - Start localhost med kommandot *yarn dev*.
+    - Du måste installera [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable) för att starta localhost.
 - Gör en uppgift och commita sedan din lösning.
     - Så commit _1_ blir uppgift 1, commit _2_ blir uppgift 2 osv.
     - Du kan namnge commitsen till **Uppgift 1, 2** etc...
