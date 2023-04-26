@@ -17,13 +17,13 @@ export const App = () => {
   }
 
   return (
-    <>
+    <div className='page'>
       <h1>Praktikant test</h1>
       <div className='main-container'>
         {showClass ? <Text title='Klass komponent' /> : <Box onClick={() => setColorOne("red")} color={colorOne} />}
       </div>
       <Toggle onClassClick={onClassClick} onFuncClick={onFuncClick} />
-    </>
+    </div>
   )
 }
 
