@@ -6,6 +6,7 @@ import { useState } from 'react'
 
 export const App = () => {
   const [colorOne, setColorOne] = useState("blue");
+	const [colorTwo, setColorTwo] = useState("green");
   const [showClass, setShowClass] = useState(false);
 
   const onClassClick = () => {
@@ -20,7 +21,13 @@ export const App = () => {
     <div className='page'>
       <h1>Praktikant test</h1>
       <div className='main-container'>
-        {showClass ? <Text title='Klass komponent' /> : <Box onClick={() => setColorOne("red")} color={colorOne} />}
+
+        {showClass ? <Text title='Klass komponent' /> :
+				<>
+					<Box onClick={() => setColorTwo("yellow")} color={colorTwo} />
+					<Box onClick={() => setColorOne("red")} color={colorOne} />
+				</>}
+
       </div>
       <Toggle onClassClick={onClassClick} onFuncClick={onFuncClick} />
     </div>
