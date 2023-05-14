@@ -8,5 +8,5 @@ interface IBoxProps {
 }
 
 export const Box = ({ color, text, onClick }: IBoxProps) => {
-  return <div onClick={onClick} className="box" style={{ backgroundColor: color }}>{text}</div>
+  return <div onClick={onClick} className="box" style={{ backgroundColor: color }}><p>{ text }</p></div>
 }

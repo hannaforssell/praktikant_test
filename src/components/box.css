@@ -1,6 +1,11 @@
 .box {
-    width: 100px;
-    height: 100px;
-    cursor: pointer;
-    border-radius: 8px;
+  color: greenyellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  border-radius: 8px;
 }
