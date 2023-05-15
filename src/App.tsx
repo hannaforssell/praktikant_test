@@ -22,15 +22,13 @@ export const App = () => {
     <div className='page'>
       <h1>Praktikant test</h1>
       <div className='main-container'>
-
-        {showClass ? <Text title='Klass komponent' /> :
+        {showClass ? <Text title='Funktionell komponent' /> :
           <>
             <Box onClick={() => setColorThree("purple")} color={colorThree} />
             <Box onClick={() => setColorTwo("yellow")} color={colorTwo} />
             <Box onClick={() => setColorOne("red")} color={colorOne} text='Lorem Ipsum' />
           </>
         }
-
       </div>
       <Toggle onClassClick={onClassClick} onFuncClick={onFuncClick} />
     </div>
