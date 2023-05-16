@@ -12,7 +12,7 @@ interface ITextState {
 
 export const Text = (props: ITextProps) => {
   const [text, setText] = useState("");
-  const [texts, setTexts] = useState([] as string[]);
+  const [texts, setTexts] = useState<string[]>([]);
 
   const handleInput = (state: ITextState) => {
     setTexts(texts => texts.concat(state.textValue));

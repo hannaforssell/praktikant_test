@@ -1,13 +1,10 @@
 import './App.css'
-import { Box } from './components/box'
 import { Toggle } from './misc/comps/toggle'
 import { Text } from './components/text'
 import { useState } from 'react'
+import { Button } from './components/button'
 
 export const App = () => {
-  const [colorOne, setColorOne] = useState("blue");
-  const [colorTwo, setColorTwo] = useState("green");
-  const [colorThree, setColorThree] = useState("pink");
   const [showClass, setShowClass] = useState(false);
 
   const onClassClick = () => {
@@ -23,13 +20,10 @@ export const App = () => {
       <h1>Praktikant test</h1>
       <div className='main-container'>
         {showClass ? <Text title='Funktionell komponent' /> :
-          <>
-            <Box onClick={() => setColorThree("purple")} color={colorThree} />
-            <Box onClick={() => setColorTwo("yellow")} color={colorTwo} />
-            <Box onClick={() => setColorOne("red")} color={colorOne} text='Lorem Ipsum' />
-          </>
+          <Button text='Klicka här för att rendera boxar' />
         }
       </div>
+
       <Toggle onClassClick={onClassClick} onFuncClick={onFuncClick} />
     </div>
   )
